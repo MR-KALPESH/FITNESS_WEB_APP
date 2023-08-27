@@ -1,0 +1,144 @@
+.first {
+  background-image: url(../../assets/single1.jpg);
+}
+
+/* Second Section  */
+.second {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  color: var(--three);
+}
+
+.second img {
+  width: 100%;
+}
+
+.second p,
+ul li {
+  color: var(--four);
+}
+
+.second p,
+.second h2 {
+  margin: 20px 0;
+}
+
+.second ul {
+  list-style: disc;
+  margin-left: 15px;
+}
+
+.second ul li {
+  margin-bottom: 10px;
+}
+
+.second > div:first-of-type h2 {
+  margin: 10px 0;
+}
+
+.second > div:first-of-type .info span {
+  color: var(--three);
+  font-weight: 500;
+}
+
+.second > div:first-of-type i {
+  color: var(--three);
+  font-size: 20px;
+}
+
+.second > div:first-of-type i:hover {
+  opacity: 0.7;
+}
+
+.second div:nth-child(2) {
+  width: 70%;
+}
+
+@media (max-width: 750px) {
+  .second {
+    flex-direction: column;
+  }
+  .second div:nth-child(2) {
+    width: 100%;
+  }
+}
+
+/* third Section  */
+
+.third {
+  background-image: url(../../assets/single2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.third_content {
+  color: var(--white);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.third_content > div {
+  width: 50%;
+}
+
+.third_content p {
+  margin: 20px 0;
+  color: var(--four);
+  width: 80%;
+}
+
+.third_content > div form input,
+.third_content textarea {
+  padding: 10px;
+  border: 1px solid var(--white);
+  background: transparent;
+  outline: none;
+  width: 100%;
+}
+
+.third_content textarea {
+  height: 100px;
+  resize: none;
+}
+
+.third_content > div form div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.third_content > div form input::placeholder,
+.third_content textarea::placeholder {
+  color: var(--white);
+}
+
+.third_content > div form > input,
+button {
+  display: block;
+  margin: 20px 0;
+}
+
+.third_content > div form button {
+  background-color: var(--one);
+}
+
+.third_content > div form button:hover {
+  color: var(--white);
+}
+
+.third_content > div form button::before {
+  background-color: var(--three);
+}
+
+@media (max-width: 600px) {
+  .third_content {
+    flex-direction: column;
+  }
+
+  .third_content > div {
+    width: 100%;
+  }
+}

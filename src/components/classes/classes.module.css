@@ -1,0 +1,86 @@
+.first {
+  background-image: url(../../assets/classes1.png);
+  color: var(--white);
+}
+
+/* Second Section  */
+
+.second {
+  color: var(--three);
+}
+
+.second_text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.classes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 30px;
+}
+
+.classes img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.classes p {
+  width: 80%;
+  margin: 10px 0;
+  color: var(--four);
+}
+
+.classes a {
+  color: var(--two);
+}
+
+@media (max-width: 800px) {
+  .classes {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .first h1 {
+    font-size: 30px;
+  }
+
+  .classes {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+/* Section Three  */
+
+.third {
+  height: 60vh;
+  background-image: url(../../assets/classes7.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 8rem;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.third p {
+  width: 80%;
+  margin: 20px auto;
+  color: var(--four);
+}
+
+.third button {
+  background-color: var(--one);
+  margin: 0 auto;
+}
+
+.third button:hover {
+  color: var(--white);
+}
+
+.third button::before {
+  background-color: var(--three);
+}
